@@ -1,8 +1,10 @@
+import Navbar from "../Components/Navbar"
 
 
 const LogIn = () => {
   return (
     <>
+    <Navbar/>
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="flex items-center justify-center border-2 rounded-2xl w-[32rem] p-8 shadow-lg bg-white">
           <form action="" className="flex flex-col gap-2 p-12 w-full">

@@ -9,6 +9,8 @@ import Contact from './Pages/Contact'
 import News from './Pages/News'
 import Residents from './Pages/Residents'
 import AdminDashboard from './Pages/AdminDashboard'
+import Code from './Pages/Code'
+
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
       <Route path='/news' element={<News/>}/>
       <Route path='/residents' element={<Residents/>}/>
       <Route path='/admindashboard' element={<AdminDashboard/>}/>
+      <Route path='/code' element={<Code/>}></Route>
     </Routes>
     </>
   )
