@@ -10,6 +10,7 @@ import News from './Pages/News'
 import Residents from './Pages/Residents'
 import AdminDashboard from './Pages/AdminDashboard'
 import Code from './Pages/Code'
+import Number from './Pages/Number'
 
 
 
@@ -27,6 +28,7 @@ function App() {
       <Route path='/residents' element={<Residents/>}/>
       <Route path='/admindashboard' element={<AdminDashboard/>}/>
       <Route path='/code' element={<Code/>}></Route>
+      <Route path='/number' element={<Number/>}></Route>
     </Routes>
     </>
   )
