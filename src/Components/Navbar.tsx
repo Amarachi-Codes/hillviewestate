@@ -8,6 +8,7 @@ const Navbar = () => {
       </div>
       <div>
         <ul className="flex gap-8">
+          <li><NavLink to={"/"}>Home</NavLink></li>
             <li><NavLink to={"/register"}>Register</NavLink></li>
             <li><NavLink to={"/login"}>Log In</NavLink> </li>
             <li><NavLink to={"/contact"}>Contact Us</NavLink></li>

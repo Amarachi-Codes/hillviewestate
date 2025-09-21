@@ -10,7 +10,7 @@ const ResidentForm = () => {
         <div className="flex items-center justify-center py-4 px-10  border-2 w-[32rem] rounded-2xl bg-white shadow-lg">
           <form className="flex flex-col p-6  w-full gap-2">
             <h2 className="text-center font-bold text-xl mb-4">Generate Entry Permit</h2>
-            <label htmlFor="">Visitors Name</label>
+            <label htmlFor="">Residents Name</label>
             <input type="text" name="" id="" className="border-1 rounded p-2" />
             <label htmlFor="">House Address</label>
             <input
