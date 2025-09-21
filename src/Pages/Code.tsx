@@ -1,6 +1,7 @@
 import { useRef, useState, type JSX } from "react";
 import { QRCodeCanvas } from "qrcode.react";
 import { NavLink } from "react-router-dom";
+import Navbar from "../Components/Navbar";
 
 export default function Code(): JSX.Element {
   const [text, setText] = useState<string>(" ");
@@ -17,6 +18,8 @@ export default function Code(): JSX.Element {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-100">
       <div className="flex flex-col items-start">
         <h2 className="text-2xl font-semibold mb-4">
@@ -39,7 +42,7 @@ export default function Code(): JSX.Element {
           ref={qrRef}
           value={text}
           size={200}
-          includeMargin={true}
+          
         />
       </div>
       <p>QRcode expires in 24hrs</p>
@@ -50,7 +53,8 @@ export default function Code(): JSX.Element {
       >
         Download QR Code
       </button>
-      <p className="cursor-pointer hover:text-indigo-700 pt-1"><NavLink to={"/number"} >Click here to generate number code</NavLink></p>
+      <p className="cursor-pointer hover:text-indigo-700 pt-1"><NavLink to={"/number"} >Click here to generate text code</NavLink></p>
     </div>
+    </>
   );
 }
